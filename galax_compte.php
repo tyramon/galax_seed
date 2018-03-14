@@ -70,5 +70,5 @@ if (isset($_POST['pseudo']) && isset($_POST['password']))
 <p>Pour vous inscrire, <a type="button" href="?inscription">Cliquez ici</a></p>
 
 </body>
-
+//auteur Shib4lba le supreme
 </html>
