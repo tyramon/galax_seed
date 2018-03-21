@@ -1,5 +1,7 @@
 <?php
 declare(strict_types=1);
+require('ini.php');
+require('common.php');
 session_start();
 $msg='';
 $msgClass='';
@@ -38,15 +40,17 @@ if (isset($_POST['identifiant']) && isset($_POST['passe']) && isset($_POST['conf
 
             if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
               // si email est bon
-              $bdd = new PDO('mysql:host=localhost;dbname=galax_seed;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+              $bdd = connexionDB();
               $req = $bdd->prepare('INSERT INTO user ( `u_id`, `u_identifiant`, `u_passe`, `u_mail` )
                                       VALUES (:id, :identifiant, :passe, :mail)');
-              $req->execute(array(
-                  'id' => NULL,
-                  'identifiant' => $identifiant,
-                  'passe' => password_hash($passe, PASSWORD_DEFAULT),
-                  'mail' => $mail
-                  ));
+
+              $req->bindValue ('id', NULL,PDO::PARAM_INT);
+              $req->bindValue('identidiant', $identifiant, PDO::PARAM_STR);
+              $req->bindValue('passe', password_hash($passe, PASSWORD_DEFAULT, PDO::PARAM_STR);
+              $req->bindValue('mail', $mail, PDO::PARAM_STR);
+
+              $req->execute();
+
               $msg = 'Vous etes inscrit!!!';
               $msgClass='succes';
               // verifier les doublons d'identifiant
@@ -57,7 +61,7 @@ if (isset($_POST['identifiant']) && isset($_POST['passe']) && isset($_POST['conf
               $msg='Veuillez entrer une adresse mail valide.';
               $msgClass='erreur';
             }
-            
+
         }
     }
 }
