@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-session_start();
+
 require('ini.php');
 
 
@@ -13,7 +13,7 @@ require('ini.php');
  * @return  object
 **/
 
-function connexionDB() : void {
+function connexionDB() : object {
 
   try {
 
