@@ -1,28 +1,21 @@
 <?php
-
 declare(strict_types=1);
 session_start();
-
 $msg='';
 $msgClass='';
-
 if (isset($_GET['retour']))
 {
     header("location: galax_compte.php");
     exit;
 }
-
 if (!isset($_SESSION['espaceMembre']['nouveauInscrit']))
 {
     $_SESSION['espaceMembre']['nouveauInscrit']=array();
 }
-
-
 if (!isset($_SESSION['espaceMembre']['clientConnecte']))
 {
     $_SESSION['espaceMembre']['clientConnecte'] = array();
 }
-
 if (isset($_POST['identifiant']) && isset($_POST['passe']) && isset($_POST['confirm']) && isset($_POST['mail']))
 {
     if (empty($_POST['identifiant']) || empty($_POST['passe']) || empty($_POST['confirm']) || empty($_POST['mail']))
@@ -43,25 +36,31 @@ if (isset($_POST['identifiant']) && isset($_POST['passe']) && isset($_POST['conf
             $passe=htmlspecialchars($_POST['passe']);
             $mail=htmlspecialchars($_POST['mail']);
 
-            $bdd = new PDO('mysql:host=localhost;dbname=galax_seed;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+            if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+              // si email est bon
+              $bdd = new PDO('mysql:host=localhost;dbname=galax_seed;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+              $req = $bdd->prepare('INSERT INTO user ( `u_id`, `u_identifiant`, `u_passe`, `u_mail` )
+                                      VALUES (:id, :identifiant, :passe, :mail)');
+              $req->execute(array(
+                  'id' => NULL,
+                  'identifiant' => $identifiant,
+                  'passe' => password_hash($passe, PASSWORD_DEFAULT),
+                  'mail' => $mail
+                  ));
+              $msg = 'Vous etes inscrit!!!';
+              $msgClass='succes';
+              // verifier les doublons d'identifiant
+              // con
 
-            $req = $bdd->prepare('INSERT INTO user ( `u_id`, `u_identifiant`, `u_passe`, `u_mail` ) 
-                                    VALUES (:id, :identifiant, :passe, :mail)');
-            $req->execute(array(
-                'id' => NULL,
-                'identifiant' => $identifiant,
-                'passe' => password_hash($passe, PASSWORD_DEFAULT),
-                'mail' => $mail
-                ));
-            $msg = 'Vous etes inscrit!!!';
-            $msgClass='succes';
-
-            // verifier les doublons d'identifiant
-            // con
+            } else {
+              // Si email pas bon
+              $msg='Veuillez entrer une adresse mail valide.';
+              $msgClass='erreur';
+            }
+            
         }
     }
 }
-
 ?>
 
 <!doctype html>
