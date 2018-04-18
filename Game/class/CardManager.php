@@ -5,7 +5,7 @@
  * Date: 18/04/2018
  * Time: 14:23
  */
-
+declare(strict_types=1)
 class CardManager
 {
 
@@ -30,7 +30,7 @@ class CardManager
     }
 
     // la carte recoit des degats
-    public function subis(){
+    public function subis(int $degat, object $attaquant){
 
     }
 
@@ -40,7 +40,7 @@ class CardManager
     }
 
     // le joueur joue sa carte sur le board
-    public function invoke(){
+    public function invoke(object $card){
 
     }
 }
