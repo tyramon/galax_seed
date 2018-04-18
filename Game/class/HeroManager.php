@@ -8,5 +8,29 @@
 
 class HeroManager
 {
+    private $_pdo;
 
+    public function initHero(){
+
+    }
+
+    public function killHero(){
+
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPdo()
+    {
+        return $this->_pdo;
+    }
+
+    /**
+     * @param mixed $pdo
+     */
+    public function setPdo($pdo)
+    {
+        $this->_pdo = $pdo;
+    }
 }

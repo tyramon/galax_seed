@@ -8,5 +8,21 @@
 
 class UserManager
 {
+    private $_pdo;
 
+    public function connexion(){
+
+    }
+
+    public function newUser(){
+
+    }
+
+    public function delete(){
+
+    }
+
+    public function edit(){
+
+    }
 }
