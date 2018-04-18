@@ -1,0 +1,110 @@
+
+
+@font-face {
+    font-family: 'Super Mario 256';
+    src: url('Font/SuperMario256.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Rammetto One';
+    src: url('Font/RammettoOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+    BACKGROUNDS
+*/
+
+.header_section {
+    background: linear-gradient(to bottom, #10324e, #047b95);
+}
+
+
+/*
+    HEADER
+*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.logo {
+    max-width: 400px;
+    height: auto;
+}
+
+header p {
+    font-family: "Rammetto One";
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.countdown img {
+    width: 200px;
+    height: auto;
+}
+
+/*
+    PERSONNAGES
+*/
+
+.personnages {
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.diskor, .reine_sadida {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.reine_sadida img {
+    width: 100%;
+    height: auto;
+}
+
+.diskor img {
+    width: 100%;
+    height: auto;
+}
+
+.diskor p, .reine_sadida p {
+    font-family: "Super Mario 256";
+    font-size: 2rem;
+    color: white;
+}
+
+.newsletter img {
+    width: 100%;
+    height: auto;
+}
+
+.inscription {
+    position: absolute;
+}
+
+
+/*
+    FOOTER
+*/
+
+footer {
+    background-color: black;
+    color: white;
+    height: 150px;
+}

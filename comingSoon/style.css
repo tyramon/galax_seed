@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Planet Megapolis';
+    src: url('font/PlanetMegapolis.woff2') format('woff2'),
+    url('font/PlanetMegapolis.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Planet Megapolis';
+
+}
+
+body{
+    display: flex;
+    -o-display: flex;
+    align-items: center;
+    -o-align-items: center;
+    overflow-x: hidden;
+}
+
+#header {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    background: #FBFBFB;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+.header {
+    background-image: url(img/fond.jpg);
+    background-size: cover;
+}
+
+.arg{
+    color: white;
+    position: absolute;
+    width: 100% ;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.horloge{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.jours_heures{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.min_sec{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.coming{
+    font-size:3rem;
+    width: 10rem;
+    height: 10rem;
+    margin:auto;
+    text-align: center;
+}
+
+.coming p {
+    height: 30px;
+    line-height: 0px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+.form_email {
+    height: 40px;
+    width: 350px;
+    border: 2px solid darkorange;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 0;
+    padding-left: 10px;
+    font-family: sans-serif;
+}
+
+.form_submit {
+    position: relative;
+    right: 5px;
+    width: 100px;
+    height: 46px;
+    border: 2px solid darkorange;
+    background-color: darkorange;
+    font-weight: bold;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+
+}
+
+.form_submit:hover {
+    background-color: orange;
+    border-left-color: orange;
+}
+
+
+/*
+
+    MEDIA QUERIES
+
+*/
+
+
+@media screen and (max-width: 1000px) {
+
+    img {
+        width: 450px;
+    }
+
+    .coming {
+        width: 16rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .horloge{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .form_email{
+        width: 250px;
+    }
+}
+
+/*
+@media screen and (max-width: 450px) {
+
+    .coming {
+        width: 14rem;
+        text-align: center;
+    }
+
+    .horloge{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+*/

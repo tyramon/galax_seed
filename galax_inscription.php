@@ -39,27 +39,27 @@ if (isset($_POST['identifiant']) && isset($_POST['passe']) && isset($_POST['conf
             $mail=htmlspecialchars($_POST['mail']);
 
             if (filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-              // si email est bon
-              $bdd = connexionDB();
-              $req = $bdd->prepare('INSERT INTO user ( `u_id`, `u_identifiant`, `u_passe`, `u_mail` )
+                // si email est bon
+                $bdd = connexionDB();
+                $req = $bdd->prepare('INSERT INTO user ( `u_id`, `u_identifiant`, `u_passe`, `u_mail` )
                                       VALUES (:id, :identifiant, :passe, :mail)');
 
-              $req->bindValue ('id', NULL,PDO::PARAM_INT);
-              $req->bindValue('identidiant', $identifiant, PDO::PARAM_STR);
-              $req->bindValue('passe', password_hash($passe, PASSWORD_DEFAULT, PDO::PARAM_STR));
-              $req->bindValue('mail', $mail, PDO::PARAM_STR);
+                $req->bindValue ('id', NULL,PDO::PARAM_INT);
+                $req->bindValue('identidiant', $identifiant, PDO::PARAM_STR);
+                $req->bindValue('passe', password_hash($passe, PASSWORD_DEFAULT, PDO::PARAM_STR));
+                $req->bindValue('mail', $mail, PDO::PARAM_STR);
 
-              $req->execute();
+                $req->execute();
 
-              $msg = 'Vous etes inscrit!!!';
-              $msgClass='succes';
-              // verifier les doublons d'identifiant
-              // con
+                $msg = 'Vous etes inscrit!!!';
+                $msgClass='succes';
+                // verifier les doublons d'identifiant
+                // con
 
             } else {
-              // Si email pas bon
-              $msg='Veuillez entrer une adresse mail valide.';
-              $msgClass='erreur';
+                // Si email pas bon
+                $msg='Veuillez entrer une adresse mail valide.';
+                $msgClass='erreur';
             }
 
         }
@@ -79,7 +79,7 @@ if (isset($_POST['identifiant']) && isset($_POST['passe']) && isset($_POST['conf
 
 </head>
 <body>
-  <div class="container">
+<div class="container">
     <h1>Page d'incription</h1>
 
     <p>Renseigner les champs suivants: </p>
@@ -99,6 +99,6 @@ if (isset($_POST['identifiant']) && isset($_POST['passe']) && isset($_POST['conf
 
 
     <a type="button" href="?retour">RETOUR à la page de connexion</a>
-  </div>
+</div>
 </body>
 </html>

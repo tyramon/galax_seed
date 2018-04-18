@@ -11,15 +11,15 @@ require('ini.php');
  *          string  $login
  *          string  $pwd
  * @return  object
-**/
+ **/
 
 function connexionDB() : object {
 
-  try {
+    try {
 
-    return new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8', DB_LOGIN, DB_PWD, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+        return new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';charset=utf8', DB_LOGIN, DB_PWD, array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
-  } catch (Exception $e) {
-    die( $e->getMessage() );
-  }
+    } catch (Exception $e) {
+        die( $e->getMessage() );
+    }
 }
