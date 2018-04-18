@@ -1,0 +1,81 @@
+%!Adobe-FontList 1.14
+%Locale:0x40c
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:RammettoOne-Regular
+FamilyName:Rammetto One
+StyleName:Regular
+FullName:Rammetto One Regular
+MenuName:Rammetto One
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\webuser1801\Desktop\galaxseed\galax_seed\Landing_page\Font\RammettoOne-Regular.ttf
+DataFormat:sfntData
+FileLength:30420
+FileModTime:1524037792
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:SuperMarioGalaxy
+FamilyName:Super Mario 256
+StyleName:Regular
+FullName:Super Mario 256
+MenuName:Super Mario 256
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\webuser1801\Desktop\galaxseed\galax_seed\Landing_page\Font\SuperMario256.ttf
+DataFormat:sfntData
+FileLength:16312
+FileModTime:1524037792
+WeightClass:700
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\webuser1801\Desktop\galaxseed\galax_seed\Landing_page\Font\super_mario_256.zip
+FileModTime:1524037792
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\webuser1801\Desktop\galaxseed\galax_seed\Landing_page\Font\_DS_Store
+FileModTime:1524037792
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Users\webuser1801\Desktop\galaxseed\galax_seed\Landing_page\Font\Rammetto_One\OFL.txt
+FileModTime:1524037792
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:RammettoOne-Regular
+FamilyName:Rammetto One
+StyleName:Regular
+FullName:Rammetto One Regular
+MenuName:Rammetto One
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Users\webuser1801\Desktop\galaxseed\galax_seed\Landing_page\Font\Rammetto_One\RammettoOne-Regular.ttf
+DataFormat:sfntData
+FileLength:30420
+FileModTime:1524037792
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
