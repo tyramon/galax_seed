@@ -1,14 +1,12 @@
 /*
     FONTS
 */
-
 @font-face {
     font-family: 'Super Mario 256';
     src: url('Font/SuperMario256.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
-
 
 @font-face {
     font-family: 'Rammetto One';
@@ -18,10 +16,11 @@
 }
 
 
+
+
 /*
     MAIN
 */
-
 body {
   margin: 0;
   padding: 0;
@@ -35,10 +34,11 @@ body {
   width: 80%;
 }
 
+
+
 /*
     BACKGROUNDS
 */
-
 header {
     background: linear-gradient(to bottom, #10324e, #047b95);
     height: auto;
@@ -67,10 +67,11 @@ header {
   position: relative;
 }
 
+
+
 /*
     Degrades de section
 */
-
 .degrade_to_bottom {
   position: absolute;
   top: 0;
@@ -92,7 +93,6 @@ header {
 /*
     HEADER
 */
-
 .logo_section {
   margin: auto;
   display: flex;
@@ -102,9 +102,9 @@ header {
 }
 
 .logo {
-    max-width: 500px;
+    width: 30%;
     height: auto;
-    padding-top: 100px;
+    padding-top: 10vh;
 }
 
 header p {
@@ -128,12 +128,12 @@ header p {
 
 .countdown img {
     align-self: flex-start;
-    width: 200px;
+    width: 15%;
     height: auto;
 }
 
 .horloge{
-  width: 65%;
+  width: 100%;
   justify-content: space-around;
   align-items: flex-end;
   text-align: center;
@@ -151,12 +151,9 @@ header p {
 }
 
 
-
-
 /*
     PERSONNAGES
 */
-
 .personnages {
     display: flex;
     justify-content: space-between;
@@ -165,9 +162,18 @@ header p {
 }
 
 .diskor p, .reine_sadida p {
+    position: relative;
     font-family: "Super Mario 256";
     font-size: 2rem;
     color: white;
+}
+
+.diskor p {
+  left: 100px;
+}
+
+.reine_sadida p {
+  left: 60px;
 }
 
 .reine_sadida, .diskor {
@@ -187,7 +193,6 @@ header p {
 /*
     NEWSLETTER
  */
-
 .newsletter {
   height: 100%;
   text-align: center;
@@ -224,27 +229,30 @@ header p {
   border-radius: 10px;
 }
 
-.newsletter form input {
+.newsletter form input:first-child {
+  flex-grow: 2;
   height: 25px;
-  width: 65%;
   border: none;
   padding: 5px;
 }
 
 .newsletter form input:last-child {
+  flex-grow: 1;
   color: white;
   font-family: "Super Mario 256";
   font-size: 1.3rem;
   background-color: #2b2759;
   border: none;
-  width: 30%;
+
+
   }
+
+
 
 
   /*
       HISTORY
    */
-
 .history {
   display:flex;
   justify-content: space-between;
@@ -307,7 +315,6 @@ header p {
 /*
     DECK
 */
-
 .deck {
   margin: auto;
   text-align: center;
@@ -351,7 +358,6 @@ header p {
 /*
     SOCIAL
 */
-
 .social {
   display: flex;
   flex-direction: column;
@@ -386,7 +392,6 @@ header p {
 /*
     FOOTER
 */
-
 footer {
   display: flex;
   justify-content: space-around;
@@ -427,8 +432,6 @@ footer p {
 
     MEDIA QUERIES
 */
-
-
 @media (max-width: 1170px) {
   .section_width {
     width: 95%;
@@ -437,6 +440,29 @@ footer p {
   .newsletter p {
     font-size: 1.5rem;
   }
+
+  .newsletter form {
+    flex-direction: column;
+  }
+
+  .newsletter form input:first-child {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .history_text p {
+    line-height: 1rem;
+    font-size: 0.7rem;
+  }
+
+  .story_text {
+    top: 41%;
+    left: 22%;
+  }
+
+
+
+
 
 }
 
@@ -449,5 +475,69 @@ footer p {
 }
 
 @media (max-width: 480px) {
+
+  /* header */
+  .logo {
+    width: 54%;
+    padding-top: 5vh;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .countdown {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .countdown img {
+    margin: auto;
+    width: 43%;
+  }
+
+  .horloge {
+    display: none;
+  }
+
+  /* PERSONNAGES */
+
+  .personnages {
+    margin-top: 0;
+    flex-direction: column;
+  }
+
+  .inscription {
+    order: 1;
+    left: auto;
+
+  }
+
+  .reine_sadida {
+    order: 2;
+  }
+
+  .diskor {
+    order: 3;
+  }
+
+  .newsletter img {
+    top: 38%;
+    width: 95%;
+  }
+
+
+
+
+
+
+
+
+
+  .diskor p, .reine_sadida p {
+    display: none;
+  }
+
 
 }
