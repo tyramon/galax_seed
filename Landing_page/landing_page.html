@@ -7,114 +7,135 @@
     <title>Galaxseed</title>
 </head>
 <body>
+  <!-- FIRST SECTION -->
+  <header id="header" class="header_section">
+      <!-- LOGO -->
+      <div class="logo_section section_width">
+          <img class="logo" src="images/logo.png" alt="Logo Galaxseed">
+          <p>Découvrez ce jeu de cartes et de stratégie ! <br/>
+              Inscrivez-vous à la newsletter pour ne rien manquer !</p>
+          <div class="countdown">
+              <img src="images/hublot.png" alt="date sortie">
+                <!-- ADD COUNTDOWN HERE -->
+                  <div class="horloge">
+                      <!-- Countdown injecté par JS -->
+                  </div>
+          </div>
+      </div>
+      <!-- PERSONNAGES -->
+      <div class="personnages">
+          <div class="reine_sadida">
+              <p>Reine Sadida</p>
+              <img src="images/reine.png" alt="reine Sadida">
+          </div>
+          <div class="newsletter">
+              <img src="images/planete.png" alt="planete bleue">
+              <div class="inscription">
+                  <p>Vous pensiez les plantes<br/>
+                      inoffensives ?</p>
+                  <form method="post" action="">
+                      <input type="email" name="email" placeholder="Inscrivez-vous à la newsletter !">
+                      <input type="submit" value="S'INSCRIRE">
+                  </form>
+              </div>
+          </div>
+          <div class="diskor">
+              <p>Diskor</p>
+              <img src="images/diskor2.png" alt="Diskor">
+          </div>
+      </div>
+      <div class="degrade_to_top"></div>
+  </header>
 
-<!-- FIRST SECTION -->
-<header id="header" class="header_section">
-    <!-- LOGO -->
-    <div class="logo_section">
-        <img class="logo" src="images/logo.png" alt="Logo Galaxseed">
-        <p>Découvrez ce jeu de cartes et de stratégie ! <br/>
-            Inscrivez-vous à la newsletter pour ne rien manquer !</p>
-        <div class="countdown">
-            <img src="images/hublot.png" alt="date sortie">
-            <div>
-              <!-- ADD COUNTDOWN HERE -->
-            </div>
-        </div>
-    </div>
-    <!-- PERSONNAGES -->
-    <div class="personnages">
-        <div class="reine_sadida">
-            <p>Reine Sadida</p>
-            <img src="images/reine.png" alt="reine Sadida">
-        </div>
-        <div class="newsletter">
-            <img src="images/planete.png" alt="planete bleue">
-            <div class="inscription">
-                <p>Vous pensiez les plantes<br/>
-                    inoffensives ?</p>
-                <form method="post" action="">
-                    <input type="email" name="email" placeholder="Inscrivez-vous à la newsletter !">
-                    <input type="submit" value="S'INSCRIRE">
-                </form>
-            </div>
-        </div>
-        <div class="diskor">
-            <p>Diskor</p>
-            <img src="images/diskor2.png" alt="Diskor">
-        </div>
+
+  <!-- SECOND SECTION  -->
+  <section class="history_wrapper">
+    <div class="degrade_to_bottom"></div>
+    <div class="history">
+      <img class="planete_left" src="images/planete2.png" alt="planete">
+      <div class="history_text">
+          <p>La route de la soif</p>
+
+          <img src="images/pierre.png" alt="pierre avec lianes">
+          <p class="story_text">C'est en parcourant la galaxie à la recherche d'une nouvelle source d'énergie que vous découvrez une petite planète bleue abritant l'eau qui se fait de plus en plus rare. <br><br>
+          Choisissez votre camp et préparez-vous à conquérir l'objet de toutes les convoitises pour assouvir la soif de votre armée de plantes ! Ou vous mourrez déshydraté ...</p>
+
+      </div>
+      <img class="planete_right" src="images/planete1.png" alt="planete">
     </div>
     <div class="degrade_to_top"></div>
-</header>
-
-
-<!-- SECOND SECTION  -->
-<section class="history_wrapper">
-  <div class="degrade_to_bottom"></div>
-  <div class="history">
-    <img class="planete_left" src="images/planete2.png" alt="planete">
-    <div class="history_text">
-        <p>La route de la soif</p>
-
-        <img src="images/pierre.png" alt="pierre avec lianes">
-        <p class="story_text">C'est en parcourant la galaxie à la recherche d'une nouvelle source d'énergie que vous découvrez une petite planète bleue abritant l'eau qui se fait de plus en plus rare. <br><br>
-        Choisissez votre camp et préparez-vous à conquérir l'objet de toutes les convoitises pour assouvir la soif de votre armée de plantes ! Ou vous mourrez déshydraté ...</p>
-
-    </div>
-    <img class="planete_right" src="images/planete1.png" alt="planete">
-  </div>
-  <div class="degrade_to_top"></div>
-</section>
+  </section>
 
 
 
-<!-- THIRD SECTION : DECK -->
+  <!-- THIRD SECTION : DECK -->
 
-<section class="deck_wrapper">
-  <div class="degrade_to_bottom"></div>
-  <div class="deck">
-    <p>Construisez votre deck<br/>
-        pour gagner la planete bleue</p>
-    <div class="carrousel_section">
-      <div class="deck_1">
-        <img src="images/carte-sadida1.png" alt="example of a card">
-        <img src="images/carte-sadida2.png" alt="example of a card">
-        <img src="images/carte-sadida3.png" alt="example of a card">
+  <section class="deck_wrapper">
+    <div class="degrade_to_bottom"></div>
+    <div class="deck section_width">
+      <p>Construisez votre deck<br/>
+          pour gagner la planete bleue</p>
+      <div class="carrousel_section">
+        <div class="deck_1">
           <!--emplacement carrousel-->
-      </div>
-      <div class="deck_2">
-        <img src="images/carte-diskor1.png" alt="example of a card">
-        <img src="images/carte-diskor2.png" alt="example of a card">
-        <img src="images/carte-diskor3.png" alt="example of a card">
+          <div>
+            <img src="images/carte-sadida1.png" alt="example of a card">
+            <img src="images/carte-sadida2.png" alt="example of a card">
+            <img src="images/carte-sadida3.png" alt="example of a card">
+          </div>
+          <!-- Boutons -->
+          <div class="carrousel_boutons">
+            <img src="images/mana-fade.png" alt="carrousel bouton">
+            <img src="images/mana-lumineux.png" alt="carrousel bouton">
+            <img src="images/mana-fade.png" alt="carrousel bouton">
+          </div>
+
+        </div>
+        <div class="deck_2">
           <!--emplacement carrousel-->
+          <div>
+            <img src="images/carte-diskor1.png" alt="example of a card">
+            <img src="images/carte-diskor2.png" alt="example of a card">
+            <img src="images/carte-diskor3.png" alt="example of a card">
+          </div>
+          <!-- Boutons -->
+          <div class="carrousel_boutons">
+            <img src="images/mana-fade.png" alt="carrousel bouton">
+            <img src="images/mana-lumineux.png" alt="carrousel bouton">
+            <img src="images/mana-fade.png" alt="carrousel bouton">
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
-  <div class="degrade_to_top"></div>
-</section>
+    <div class="degrade_to_top"></div>
+  </section>
 
 
-<!-- SOCIAL MEDIA SECTION -->
-<section class="social_media_wrapper">
-<div class="degrade_to_bottom"></div>
-    <div class="social">
-      <img src="images/logo-hublot.png" alt="logo G">
-      <p>Vous pensiez les plantes inoffensives ?</p>
-      <div class="social_logos">
-          <a href=""><img src="images/fb_logo.png" alt="logo Facebook"></a>
-          <a href=""><img src="images/twitter_logo.png" alt="logo Twitter"></a>
+  <!-- SOCIAL MEDIA SECTION -->
+  <section class="social_media_wrapper">
+  <div class="degrade_to_bottom"></div>
+      <div class="social section_width">
+        <img src="images/logo-hublot.png" alt="logo G">
+        <p>Vous pensiez les plantes inoffensives ?</p>
+        <div class="social_logos">
+            <a href=""><img src="images/fb_logo.png" alt="logo Facebook"></a>
+            <a href=""><img src="images/twitter_logo.png" alt="logo Twitter"></a>
+        </div>
       </div>
-    </div>
-</section>
+  </section>
 
-<footer>
-    <a href="http://www.objectif3w.com/" target="_blank"><img src="images/logo_obj3W.png" alt="Logo Objectif3W"></a>
-    <p>&copy; 2018 Galaxseed. Tous droits réservés.</p>
-    <div class="back_to_top">
-      <a href="#header"><img src="images/up_arrow.png" alt="back to the top of the page arrow"></a>
-      <a href="#header">Retour en haut</a>
-    </div>
-</footer>
+  <footer>
+      <a href="http://www.objectif3w.com/" target="_blank"><img src="images/logo_obj3W.png" alt="Logo Objectif3W"></a>
+      <p>&copy; 2018 Galaxseed. Tous droits réservés.</p>
+      <div class="back_to_top">
+        <a href="#header"><img src="images/up_arrow.png" alt="back to the top of the page arrow"></a>
+        <a href="#header">Retour en haut</a>
+      </div>
+  </footer>
+
+  <!-- JS POUR SKAND -->
+  <script src="js/countdown.js"></script>
 
 </body>
 </html>

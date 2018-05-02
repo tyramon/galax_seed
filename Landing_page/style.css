@@ -1,10 +1,6 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: black;
-  font-family: "Rammetto One";
-}
+/*
+    FONTS
+*/
 
 @font-face {
     font-family: 'Super Mario 256';
@@ -21,6 +17,23 @@ body {
     font-style: normal;
 }
 
+
+/*
+    MAIN
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Rammetto One";
+
+}
+
+.section_width {
+  width: 80%;
+}
 
 /*
     BACKGROUNDS
@@ -54,7 +67,9 @@ header {
   position: relative;
 }
 
-/* Degradés */
+/*
+    Degrades de section
+*/
 
 .degrade_to_bottom {
   position: absolute;
@@ -79,8 +94,6 @@ header {
 */
 
 .logo_section {
-  width: 80%;
-  height: 1000px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -101,15 +114,42 @@ header p {
     text-align: center;
 }
 
+
+/*
+    COUNTDOWN
+*/
+.countdown, .horloge {
+  display: flex;
+}
+
 .countdown {
   width: 80%;
-  background-color: white;
 }
 
 .countdown img {
+    align-self: flex-start;
     width: 200px;
     height: auto;
 }
+
+.horloge{
+  width: 65%;
+  justify-content: space-around;
+  align-items: flex-end;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.horloge span {
+  font-size: 3rem;
+  color: white;
+}
+
+.horloge p {
+  margin: 0;
+  color: black;
+}
+
 
 
 
@@ -118,10 +158,10 @@ header p {
 */
 
 .personnages {
-    height: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-top: 150px;
 }
 
 .diskor p, .reine_sadida p {
@@ -160,7 +200,7 @@ header p {
 
 .inscription {
   position: absolute;
-  top: 40%;
+  top: 33%;
   left: 0;
 }
 
@@ -269,7 +309,6 @@ header p {
 */
 
 .deck {
-  width: 80%;
   margin: auto;
   text-align: center;
   font-family: "Super Mario 256";
@@ -281,14 +320,30 @@ header p {
 
 .carrousel_section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+
+.deck img {
+  width: 25%;
+  height: auto;
 }
 
 .deck_1, .deck_2 {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.carrousel_boutons {
+  width: 100%;
+  padding: 30px 10px;
+}
+
+.carrousel_boutons img {
+  width: 5%;
+  height: auto;
 }
 
 
@@ -303,19 +358,20 @@ header p {
   justify-content: space-around;
   align-items: center;
   padding: 50px 0;
+  margin: auto;
   text-align: center;
 }
 
 .social p {
   font-family: "Super Mario 256";
-  font-size: 3rem;
+  font-size: 2rem;
   color: white;
   margin: 0;
   padding: 30px 0;
 }
 
 .social img {
-  width: 15%;
+  width: 13%;
   height: auto;
 }
 
@@ -349,6 +405,7 @@ footer img {
 
 footer p {
   margin: 0;
+  align-self: flex-end;
 }
 
 .back_to_top a {
@@ -361,4 +418,36 @@ footer p {
 .back_to_top img {
   width: 30px;
   height: auto;
+}
+
+
+
+/*
+    RESPONSIVE:
+
+    MEDIA QUERIES
+*/
+
+
+@media (max-width: 1170px) {
+  .section_width {
+    width: 95%;
+  }
+
+  .newsletter p {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 970px) {
+
+}
+
+@media (max-width: 750px) {
+
+}
+
+@media (max-width: 480px) {
+
 }

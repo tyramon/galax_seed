@@ -86,7 +86,7 @@ if (isset($_POST['email']))
 
         </div>
 
-</div>
+      </div>
 
     <div id="header">
         <div class="header" id="large-header">
@@ -100,5 +100,3 @@ if (isset($_POST['email']))
 
 </body>
 </html>
-
-
