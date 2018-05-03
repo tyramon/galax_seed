@@ -392,10 +392,9 @@ header p {
 /*
     FOOTER
 */
+
 footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 100%;
   background-color: black;
   color: white;
   height: 150px;
@@ -404,11 +403,18 @@ footer {
   padding: 10px 0;
 }
 
-footer img {
+.footer_content {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_content img {
   padding: 10px;
 }
 
-footer p {
+.footer_content p {
   margin: 0;
   align-self: flex-end;
 }
@@ -459,12 +465,9 @@ footer p {
     top: 41%;
     left: 22%;
   }
-
-
-
-
-
 }
+
+
 
 @media (max-width: 970px) {
 
@@ -475,6 +478,10 @@ footer p {
 }
 
 @media (max-width: 480px) {
+  /* general */
+  .title, .history_text p:first-child, .social p {
+    font-size: 1rem;
+  }
 
   /* header */
   .logo {
@@ -527,6 +534,68 @@ footer p {
     width: 95%;
   }
 
+  /* HISTORY */
+
+  .history {
+    flex-direction: column;
+  }
+
+  .planete_right {
+    width: 49%;
+    align-self: flex-end;
+    order: 1;
+  }
+
+  .planete_left {
+      width: 43%;
+      align-self: flex-start;
+      order: 3;
+  }
+
+  .history_text {
+    order: 2;
+    position: initial;
+    padding: 0
+  }
+
+  .story_text {
+    position: initial;
+  }
+
+  .history_text p {
+    width: 80%;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  .history_text img {
+    display: none;
+  }
+
+  .history div:nth-child(2) {
+    align-self: center;
+  }
+
+
+  /* DECK */
+
+  .carrousel_section {
+    padding-top: 50px;
+    flex-direction: column;
+}
+
+  /* SOCIAL */
+
+  .footer_content {
+    width: 95%;
+    margin: auto;
+    align-items: flex-start;
+  }
+
+  .social img {
+    width: 35%;
+  }
 
 
 
@@ -535,7 +604,10 @@ footer p {
 
 
 
-  .diskor p, .reine_sadida p {
+
+
+
+  .diskor, .reine_sadida {
     display: none;
   }
 
