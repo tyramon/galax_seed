@@ -459,6 +459,10 @@ footer {
 
 @media (max-width: 1280px) {
 
+  h2 {
+    padding: 5vh 0;
+  }
+
   .inscription {
     top: 21%;
   }
@@ -476,7 +480,7 @@ footer {
   }
 
   .story_text {
-    top: 43%;
+    top: 40%;
     left: 21%;
   }
 
@@ -484,6 +488,7 @@ footer {
 
 
 @media (max-width: 1170px) {
+
   .first_h2{
     font-size: 1.1rem;
     color: black;
@@ -513,8 +518,8 @@ footer {
   }
 
   .story_text {
-    top: 48%;
-    left: 22%;
+    top: 44%;
+    left: 21%;
   }
 }
 
