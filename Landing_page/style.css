@@ -408,9 +408,7 @@ header p {
 */
 
 footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 100%;
   background-color: black;
   color: white;
   height: 25vh;
@@ -419,11 +417,18 @@ footer {
   padding: 10px 0;
 }
 
-footer img {
+.footer_content {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer_content img {
   padding: 10px;
 }
 
-footer p {
+.footer_content p {
   margin: 0;
   align-self: flex-end;
 }
@@ -474,6 +479,7 @@ footer p {
     top: 41%;
     left: 22%;
   }
+}
 
 
 
@@ -528,6 +534,10 @@ footer p {
 }
 
 @media (max-width: 480px) {
+  /* general */
+  .title, .history_text p:first-child, .social p {
+    font-size: 1rem;
+  }
 
   h2 {
     font-size: 1.7rem;
