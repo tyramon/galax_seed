@@ -524,14 +524,18 @@ footer {
     top: 23%;
   }
 
+  .history_text {
+    padding: 22vh 0;
+  }
+
   .history_text img {
     width: 100%;
   }
 
   .story_text {
     top: 48%;
-    left: 18%;
-    width: 56%;
+    left: 13%;
+    width: 65%;
   }
 
   .social img {
@@ -711,7 +715,7 @@ footer {
     position: initial;
     width: 90%;
     margin: auto;
-    padding: 10px 0;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
   }
