@@ -551,7 +551,70 @@ footer {
   .first_h2{
     font-size: 1.1rem;
     color: black;
-    padding: 1vh 0;
+    padding: 2vh 0;
+  }
+
+  .horloge p {
+    font-size: 1rem;
+  }
+
+  .horloge span {
+    font-size: 2rem;
+  }
+
+  .newsletter form {
+    flex-direction: row;
+    padding: 15px 10px 5px 10px;
+  }
+
+  /* PERSONNAGES */
+
+  .personnages {
+    flex-wrap: wrap;
+    margin: 0;
+   }
+
+   .inscription {
+     width: 80%;
+     position: initial;
+     left: auto;
+   }
+
+  .newsletter {
+    order: 1;
+    left: auto;
+    flex-grow: 1;
+    width: 100%;
+    padding: 10vh 0;
+  }
+
+  .reine_sadida {
+    width: 50%;
+    order: 2;
+    flex-grow: 2;
+    align-self: flex-end;
+  }
+
+  .diskor {
+    width: 50%;
+    order: 3;
+    flex-grow: 2;
+    align-self: flex-end;
+  }
+
+  .diskor p, .reine_sadida p {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .newsletter img {
+    display: none;
+  }
+
+  .newsletter form {
+    width: 90%;
+    margin: auto;
   }
 
   .history_text img {
@@ -611,45 +674,7 @@ footer {
     display: none;
   }
 
-  /* PERSONNAGES */
 
-  .personnages {
-    flex-wrap: wrap;
-   }
-
-   .inscription {
-     left: auto;
-   }
-
-  .newsletter {
-    order: 1;
-    left: auto;
-    flex-grow: 1;
-    width: 100%;
-  }
-
-  .reine_sadida {
-    width: 50%;
-    order: 2;
-    flex-grow: 2;
-    align-self: flex-end;
-  }
-
-  .diskor {
-    width: 50%;
-    order: 3;
-    flex-grow: 2;
-    align-self: flex-end;
-  }
-
-  .newsletter img {
-    display: none;
-  }
-
-  .newsletter form {
-    width: 90%;
-    margin: auto;
-  }
 
   /* HISTORY */
 
@@ -688,6 +713,18 @@ footer {
     padding: 10px 0;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
+  }
+
+  .back_to_top, .client_logo {
+    align-self: flex-start;
+  }
+
+  .client_logo img {
+    width: 60%;
+  }
+
+  footer p {
+    font-size: 0.3rem;
   }
 
 
