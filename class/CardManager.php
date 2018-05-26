@@ -29,10 +29,6 @@ class CardManager
 
     }
 
-    // la carte recoit des degats
-    public function subis(int $degat, object $attaquant){
-
-    }
 
     // la carte disparais du board
     public function discard(){
