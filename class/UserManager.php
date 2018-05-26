@@ -1,14 +1,14 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: webuser1801
- * Date: 18/04/2018
- * Time: 14:18
- */
+declare(strict_types=1);
 
-class UserManager
+class UserManager extends PDOManager
 {
-    private $_pdo;
+    private $pdo;
+
+    public function __construct()
+    {
+        $this->pdo=parent::getInstance()->getPDO();
+    }
 
     public function connexion(){
 
